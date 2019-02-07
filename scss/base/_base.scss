@@ -1,0 +1,18 @@
+/* basic reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* set initial font to 10px 62.5% of default 16px for rem values */
+  font-size: 62.5%;
+}
+
+body {
+
+  box-sizing: border-box;
+}
