@@ -11,7 +11,6 @@ body {
 .heading-primary {
   color:$color-white;
   text-transform: uppercase;
-
   backface-visibility: hidden; /* fix for shake on amimation end */
   margin-bottom: 6rem;
 
