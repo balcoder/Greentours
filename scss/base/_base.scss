@@ -8,11 +8,31 @@
 }
 
 html {
-  /* set initial font-size to 10px 62.5% of default 16px for rem values */
-  font-size: 62.5%;
+  /* set initial font-size to 10px 62.5% of default 16px for rem values
+  so now all rem values in scss will scale with our font-size %
+   */
+  font-size: 62.5%; // 1 rem = 10px;
+
+  @include respond(big-desktop) { //min-width media qurey
+    font-size: 75%; //1rem = 12px, 12/16 = 75%
+
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;  //1rem = 8px, 8/16 = 50%
+  }
+
 }
 
 body {
-
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
