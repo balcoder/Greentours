@@ -447,6 +447,9 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -456,7 +459,11 @@ body {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.8);
     background-color: #fff;
     border-radius: 3px;
-    display: table; }
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .4s .2s; }
   .popup__left {
     overflow: hidden;
     width: 33.3333333%;
