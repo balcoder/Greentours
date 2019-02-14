@@ -175,7 +175,12 @@
       transform:rotateY(0deg);
     }
 
-    // back side styling
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+
+
     &__cta {
       position: relative;
       top: 0%;//parent
@@ -190,7 +195,7 @@
     }
 
     &__price-value {
-      font-size: 6rem;
+      font-size: 4rem;
     }
   }
 }
