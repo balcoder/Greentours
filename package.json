@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "advanced css project",
   "main": "index.js",
-  "scripts": {
+  "scripts": {    
     "compile:sass": "node-sass scss/main.scss css/style.css -w"
 
 
