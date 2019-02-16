@@ -13,6 +13,6 @@ Just use `npm run task-name` where the task-name is one of the script names belo
 - `start`     : runs both above in parallel (run this when developing)
 - `compile:sass` : watches main.scss and compiles to css/style.comp.css
 - `concat:css` : adds icon-font.css to style.css
-- `prefis:css`  :adds prefixes using autoprefixer
+- `prefix:css`  :adds prefixes using autoprefixer
 - `compress:css` : compresses css using node-sass
 - `build:css` : creates production ready code compiled,concatinated, prefixed and compressed
